@@ -1,0 +1,153 @@
+body{
+    background: #f7ffac;
+    color: #ff00aa;
+     font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+      
+}
+
+
+
+section, header{
+    width: 80%;
+    max width: 900px;
+    margin: auto; 
+    margin-bottom: 5rem;
+}
+
+sectin, header {
+    margin-bottom: 4rem;
+}
+
+header, h1, h2, blockquote {
+    font-family: "Share Tech Mono", monospace;
+}
+
+h1{
+    font-size: 5.000rem;
+    line-height: 1;
+}
+
+h2{
+    font-size: 3.062rem ;
+    line-height: 1;
+}
+
+p{ 
+    font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;;
+    line-height: 1.6;
+}
+
+h3{
+    font-size: 2.438rem;
+}
+blockquote{padding: 1rem 0;
+    font-size: 1.312rem;
+    font-style: italic;
+    hanging-punctuation: first;
+    text-indent: -0.5rem;
+
+
+}
+
+/*--   navigation --*/
+.responsivenav{
+    background: #dee051;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    font-size: 2rem;
+    color: rgb(56, 42, 0);
+    padding-left: 50px;
+}
+.gridimage {
+  display: flex;       /* puts images in a row */
+  gap: 10px;           /* space between them */
+  justify-content: center;
+}
+
+.gridimage img {
+  width: 300px;        /* size of each image */
+  height: auto;
+}
+
+.wideimage img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.abcyo {
+    display: flex;              /* makes the container a flexbox */
+    justify-content: center;    /* centers the image horizontally */
+    align-items: center;        /* centers the image vertically if container has height */
+    height: 300px;              /* optional: set a height for vertical centering */
+}
+
+.abcyo img {
+    width: 50%;   /* adjust the size as needed */
+    height: auto; /* keeps the image's aspect ratio */
+}
+
+
+
+nav{
+    display: flex;
+    padding: 1.5rem 0;
+}
+
+nav ul{
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    list-style-type: none;
+    padding-right: 70px;
+    color: black;
+}
+
+nav ul li {
+    display: inline;
+    margin: 5px;
+}
+
+nav a {
+    border-bottom: none;
+}
+
+nav a:hover {
+    color:#ff007b;
+    transition:all .03s ease-in-out;
+}
+
+
+
+
+
+/*-- Styling links --*/
+a {
+    color: #ff42d6;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    font-weight: 600;
+    
+}
+
+a:hover {
+    color:#b80084;
+}
+
+
+/*-- styling the footer -*/
+
+footer{
+    background:#eff25f;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
