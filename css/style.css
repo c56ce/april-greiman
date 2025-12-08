@@ -1,10 +1,36 @@
-body{
+body {
     background: #f5fdb4;
-    color: #ff00aa;
-     font-family: "Share Tech Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
       
+/* All text on aprilgreiman.html is pink */
+body.pink {
+    color: #ff69b4;  /* pink */
+}
+
+/* Make links pink too */
+body.pink a {
+    color: #ff69b4;
+}
+
+/* Optional: links on hover can be slightly darker */
+body.pink a:hover {
+    color: #e0559e;
+}
+ 
+body.blue {
+    color:#0800a0
+}
+* Make links pink too */
+body.blue a {
+    color: #0800a0;
+}
+
+/* Optional: links on hover can be slightly darker */
+body.blue a:hover {
+    color: #e0559e;
 }
 
 
@@ -14,14 +40,19 @@ section, header{
     max width: 900px;
     margin: auto; 
     margin-bottom: 5rem;
+    
 }
 
-sectin, header {
+section, header {
     margin-bottom: 4rem;
 }
 
 header, h1, h2, blockquote {
     font-family: "Share Tech Mono", monospace;
+}
+
+#logo p {
+    font-family: 'Share Tech Mono', monospace;
 }
 
 h1{
@@ -37,7 +68,7 @@ h2{
 p{ 
     font-family: "Share Tech", sans-serif;
   font-weight: 900;
-  font-style: normal;;
+  font-style: normal;
     line-height: 1.3;
 }
 
@@ -95,6 +126,12 @@ blockquote{padding: 1rem 0;
     height: auto; /* keeps the image's aspect ratio */
 }
 
+.topimg {
+    width: 100%;        /* stretches image full width of screen */
+    height: 400px;      /* adjust this number to control height */
+    object-fit: cover;  /* keeps image from stretching weirdly */
+    display: block;     /* removes small whitespace below image */
+}
 
 
 nav{
@@ -108,7 +145,7 @@ nav ul{
     letter-spacing: 1px;
     list-style-type: none;
     padding-right: 70px;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 nav ul li {
@@ -125,29 +162,87 @@ nav a:hover {
     transition:all .03s ease-in-out;
 }
 
+/* Grid container for designers */
+section#designers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;               /* space between cards */
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 5rem;
+    align-items: stretch;       /* ensures all cards are equal height */
+}
 
+/* Card link wrapper (entire card clickable) */
+.card-link {
+    display: block;             /* make link block level */
+    text-decoration: none;
+}
+
+/* Designer card itself */
+.designer-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #ffffff;  /* default card background */
+    color: #0800a0;             /* navy text */
+    font-family: "Share Tech Mono", monospace; /* all text in Share Tech Mono */
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Images inside card */
+.designer-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.8rem;
+}
+
+/* Make all text inside the card inherit the correct colors and font */
+.designer-card * {
+    color: inherit !important;
+    font-family: inherit !important;
+}
+
+/* Hover effect: entire card yellow, text pink */
+.card-link:hover .designer-card {
+    background-color: #f5fdb4;  /* yellow background on hover */
+    color: #ff69b4;             /* pink text on hover */
+}
 
 
 
 /*-- Styling links --*/
 a {
-    color: #ff42d6;
+    color: #0800a0;
     text-decoration: none;
     border-bottom: 1px dotted;
     font-weight: 600;
-    
 }
 
 a:hover {
-    color:#b80084;
+    color:#00b881;
 }
-
 
 /*-- styling the footer -*/
 
-footer{
-    background:#eff25f;
-    color: rgb(255, 255, 255);
+
+footer {
+    background:#3f3f08;
+    color: rgb(233, 233, 233);
     text-align: center;
-    
+    font-size: 0.8rem;
+    padding: 1rem 0;
+}
+footer a{
+    color:#3f3f08
+    padding: 3rem 0;
+}
+@media (mx-width: 600px) {header h1}
+{
+    font-size: 4rem;
 }
