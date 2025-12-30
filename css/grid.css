@@ -14,7 +14,7 @@
     }
 
     .designer-card {
-      background-color: #fff;
+      background-color: #f6ff7d;
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       overflow: hidden;
@@ -22,6 +22,7 @@
     }
 
     .designer-card:hover {
+      background-color: aqua;
       transform: translateY(-5px);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     }
@@ -35,13 +36,14 @@
     .designer-card h3 {
       font-size: 1.25rem;
       margin: 1rem;
-      color: #111;
+      color: #110093;
     }
 
     .designer-card p {
       margin: 0 1rem 1.5rem;
-      color: #555;
+      color: #0d0080;
       font-size: 0.95rem;
+      font-family: "Share Tech Mono", monospace;
     }
 
     /* ====== RESPONSIVE ====== */
