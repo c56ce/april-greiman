@@ -1,5 +1,5 @@
 body {
-    background: #f5fdb4;
+    background: #f9fdd3;
     font-family: "Share Tech Mono", monospace;
     font-weight: 400;
     font-style: normal;
@@ -7,17 +7,19 @@ body {
       
 /* All text on aprilgreiman.html is pink */
 body.pink {
-    color: #ff69b4;  /* pink */
+    color: #ff0f87;  /* pink */
 }
+
+
 
 /* Make links pink too */
 body.pink a {
-    color: #ff69b4;
+    color: #ff0f87;
 }
 
 /* Optional: links on hover can be slightly darker */
 body.pink a:hover {
-    color: #e0559e;
+    color: #ff0f87;
 }
  
 body.blue {
@@ -30,7 +32,7 @@ body.blue a {
 
 /* Optional: links on hover can be slightly darker */
 body.blue a:hover {
-    color: #e0559e;
+    color: #f86bb2;
 }
 
 
@@ -59,6 +61,11 @@ h1{
     font-size: 5.000rem;
     line-height: 1;
      margin-bottom: 0.3em;
+     color: #ff0f87
+}
+
+body.blue h1 {
+    color: #0800a0;
 }
 
 h2{
@@ -89,7 +96,7 @@ blockquote{padding: 1rem 0;
 
 /*--   navigation --*/
 .responsivenav{
-    background: #dee051;
+    background: #E6E87D;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -161,14 +168,14 @@ nav a {
 }
 
 nav a:hover {
-    color:#ff007b;
+    color:#ff0f87;
     transition:all .03s ease-in-out;
 }
 
 
 /*-- Styling links --*/
 a {
-    color: #0800a0;
+    color: #ff0f87;
     text-decoration: none;
     border-bottom: 1px dotted;
     font-weight: 600;
