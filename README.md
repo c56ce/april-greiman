@@ -1,4 +1,4 @@
-# april-greiman-
+# women-in-design.
 [version 1](https://c56ce.github.io/women-in-design./index1.html)
 
 [version 2](https://c56ce.github.io/women-in-design./index2.html)
