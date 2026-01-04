@@ -6,19 +6,12 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 1.6;
+  color: #ff0f87;
 }
 
 body { margin: 0; }
 .topimg { display: block; width: 100%; height: auto; }
 .responsivenav { width: 100%; }
-
-body.pink {
-  color: #ff0f87; 
-}
-
-body.pink a:hover {
-  color: #ff0f87;
-}
 
 body.blue {
   color: #0800a0;
@@ -58,7 +51,7 @@ h1,
 h2,
 blockquote {
   font-family: "Share Tech Mono", monospace;
-  color: #ff0f87;
+  
 }
 
 h1 {
