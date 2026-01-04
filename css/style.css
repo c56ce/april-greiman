@@ -46,9 +46,7 @@ section + section {
    Typography
    ========================= */
 
-/* Type scale 
-   Base: 1rem = 16px
-   Ratio ≈ 1.25 
+/* 
 
    p: 1.125rem
    h3: 1.406rem
@@ -247,21 +245,16 @@ body.blue footer a {
    Responsive
    ========================= */
 
-@media (max-width: 600px) {
-
-  /* make the top bar less tall */
+  
   .responsivenav {
     padding: 12px 12px;
   }
 
- /* ========================= MOBILE FIXES ========================= */ 
-/* =========================
-   MOBILE FIXES
-   ========================= */
+ /* ===MOBILE FIXES ====== */ 
 
 @media (max-width: 600px) {
 
-  /* Page width */
+  
   header,
   section {
     width: 92%;
@@ -269,7 +262,7 @@ body.blue footer a {
     margin-bottom: 2.5rem;
   }
 
-  /* NAV: stack links in a column and remove big desktop padding */
+ 
   .responsivenav {
     flex-direction: column;
     align-items: flex-start;
@@ -303,7 +296,6 @@ body.blue footer a {
     margin: 0.35rem 0;
   }
 
-  /* TYPO: smaller + readable */
   h1 {
     font-size: 3rem;
     line-height: 1.05;
@@ -339,7 +331,6 @@ body.blue footer a {
     margin: 0;
   }
 
-  /* IMAGES: stop fixed desktop widths breaking mobile */
   .topimg {
     height: 220px;
   }
