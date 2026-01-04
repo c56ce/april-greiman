@@ -1,121 +1,167 @@
+
 body {
-    background: #f9fdd3;
-    font-family: "Share Tech Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
+  background: #f9fdd3;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.6;
 }
-      
-/* All text on aprilgreiman.html is pink */
+
+body { margin: 0; }
+.topimg { display: block; width: 100%; height: auto; }
+.responsivenav { width: 100%; }
+
 body.pink {
-    color: #ff0f87;  /* pink */
+  color: #ff0f87; 
 }
 
-
-
-/* Make links pink too */
-body.pink a {
-    color: #ff0f87;
-}
-
-/* Optional: links on hover can be slightly darker */
 body.pink a:hover {
-    color: #ff0f87;
+  color: #ff0f87;
 }
- 
+
 body.blue {
-    color:#0800a0
+  color: #0800a0;
 }
-* Make links pink too */
+
 body.blue a {
-    color: #0800a0;
+  color: #0800a0;
 }
 
-/* Optional: links on hover can be slightly darker */
 body.blue a:hover {
-    color: #f86bb2;
+  color: #fa7ebc;
 }
 
 
 
-section, header{
-    width: 80%;
-    max width: 900px;
-    margin: auto; 
-    margin-bottom: 5rem;
-    
+/* =========================
+   Layout containers
+   ========================= */
+
+section,
+header {
+  width: 80%;
+  max-width: 900px; 
+  margin: auto;
+  margin-bottom: 4rem; 
 }
 
-section, header {
-    margin-bottom: 4rem;
+/* =========================
+   Typography
+   ========================= */
+
+header,
+h1,
+h2,
+blockquote {
+  font-family: "Share Tech Mono", monospace;
 }
 
-header, h1, h2, blockquote {
-    font-family: "Share Tech Mono", monospace;
-}
-
-#logo p {
-    font-family: 'Share Tech Mono', monospace;
-}
-
-h1{
-    font-size: 5.000rem;
-    line-height: 1;
-     margin-bottom: 0.3em;
-     color: #ff0f87
+h1 {
+  font-size: 5rem;
+  line-height: 1;
+  margin-bottom: 0.7em;
+  color: #ff0f87;
 }
 
 body.blue h1 {
-    color: #0800a0;
+  color: #0800a0;
 }
 
-h2{
-    font-size: 3.062rem ;
-    line-height: 1;
-      margin-top: 0;
-  margin-bottom: 0.8em;
+h2 {
+  font-size: 2.8rem;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0.4em;
 }
 
-p{ 
-    font-family: "Share Tech Mono", sans-serif;
-  font-weight: 900;
+h3 {
+  font-size: 1.3rem;
+  line-height:1.3 ;
+}
+
+p {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
   font-style: normal;
-    line-height: 1.3;
+  line-height: 1.3;
+  font-size: 1rem;
 }
 
-h3{
-    font-size: 2.438rem;
+blockquote {
+  padding: 1rem 0;
+  font-size: 1.312rem;
+  font-style: italic;
+  hanging-punctuation: first;
+  text-indent: -0.5rem;
 }
-blockquote{padding: 1rem 0;
-    font-size: 1.312rem;
-    font-style: italic;
-    hanging-punctuation: first;
-    text-indent: -0.5rem;
+blockquote p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+/* =========================
+   Navigation
+   ========================= */
 
-
+.responsivenav {
+  background: #e6e87d;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/*--   navigation --*/
-.responsivenav{
-    background: #E6E87D;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#logo {
+  font-size: 2rem;
+  color: rgb(56, 42, 0);
+  padding-left: 50px;
 }
 
-#logo{
-    font-size: 2rem;
-    color: rgb(56, 42, 0);
-    padding-left: 50px;
+#logo p {
+  font-family: "Share Tech Mono", monospace;
+  color: #0800a0;
 }
+
+nav {
+  display: flex;
+  padding: 1.5rem 0;
+}
+
+nav ul {
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  list-style-type: none;
+  padding-right: 70px;
+  color: rgb(0, 0, 0);
+}
+
+nav ul li {
+  display: inline;
+  margin: 5px;
+}
+
+nav a {
+  border-bottom: none;
+}
+
+nav a:hover {
+  color: #ff0f87;
+  transition: all 0.03s ease-in-out;
+}
+
+/* =========================
+   Images / media
+   ========================= */
+
 .gridimage {
-  display: flex;       /* puts images in a row */
-  gap: 10px;           /* space between them */
+  display: flex;
+  gap: 10px;
   justify-content: center;
 }
 
 .gridimage img {
-  width: 300px;        /* size of each image */
+  width: 300px;
   height: auto;
 }
 
@@ -124,82 +170,88 @@ blockquote{padding: 1rem 0;
   height: auto;
   display: block;
 }
+
 .abcyo {
-    display: flex;              /* makes the container a flexbox */
-    justify-content: center;    /* centers the image horizontally */
-    align-items: center;        /* centers the image vertically if container has height */
-    height: 300px;              /* optional: set a height for vertical centering */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
 }
 
 .abcyo img {
-    width: 50%;   /* adjust the size as needed */
-    height: auto; /* keeps the image's aspect ratio */
+  width: 50%;
+  height: auto;
 }
 
 .topimg {
-    width: 100%;        /* stretches image full width of screen */
-    height: 400px;      /* adjust this number to control height */
-    object-fit: cover;  /* keeps image from stretching weirdly */
-    display: block;     /* removes small whitespace below image */
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
 }
 
+/* =========================
+   Links
+   ========================= */
 
-nav{
-    display: flex;
-    padding: 1.5rem 0;
-}
-
-nav ul{
-    text-align: right;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    list-style-type: none;
-    padding-right: 70px;
-    color: rgb(0, 0, 0);
-}
-
-nav ul li {
-    display: inline;
-    margin: 5px;
-}
-
-nav a {
-    border-bottom: none;
-}
-
-nav a:hover {
-    color:#ff0f87;
-    transition:all .03s ease-in-out;
-}
-
-
-/*-- Styling links --*/
 a {
-    color: #ff0f87;
-    text-decoration: none;
-    border-bottom: 1px dotted;
-    font-weight: 600;
+  color: #ff0f87;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  font-weight: 600;
 }
 
 a:hover {
-    color:#00b881;
+  color: #fa7ebc;
 }
 
-/*-- styling the footer -*/
-
+/* =========================
+   Footer
+   ========================= */
 
 footer {
-    background:#3f3f08;
-    color: rgb(233, 233, 233);
-    text-align: center;
-    font-size: 0.8rem;
-    padding: 1rem 0;
+  background: #322e04;
+  color: rgb(233, 233, 233);
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 1rem 0;
 }
-footer a{
-    color:#3f3f08
-    padding: 3rem 0;
+
+footer a {
+  color: #ff0f87; 
+  padding: 0;
 }
-@media (mx-width: 600px) {header h1}
-{
+body.blue footer a {
+  color: #ff0f87;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+
+@media (max-width: 600px) {
+  header h1 {
     font-size: 4rem;
+  }
+}
+
+
+/* Force pink text on specific pages */
+body.friedlander,
+body.hische,
+body.scher {
+  color: #ff0f87;
+}
+
+body.friedlander a,
+body.hische a,
+body.scher a {
+  color: #ff0f87;
+}
+
+body.friedlander a:hover,
+body.hische a:hover,
+body.scher a:hover {
+  color: #ff0f87;
 }
