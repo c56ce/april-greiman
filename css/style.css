@@ -176,12 +176,12 @@ nav a:hover {
   justify-content: center;
 }
 
-.gridimage img {
+.gridimage image {
   width: 300px;
   height: auto;
 }
 
-.wideimage img {
+.wideimage image {
   width: 100%;
   height: auto;
   display: block;
@@ -194,7 +194,7 @@ nav a:hover {
   height: 300px;
 }
 
-.abcyo img {
+.abcyo image {
   width: 50%;
   height: auto;
 }
