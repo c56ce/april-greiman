@@ -45,6 +45,9 @@ header {
   margin: auto;
   margin-bottom: 4rem; 
 }
+section + section {
+  margin-top: 6rem;
+}
 
 /* =========================
    Typography
@@ -55,6 +58,7 @@ h1,
 h2,
 blockquote {
   font-family: "Share Tech Mono", monospace;
+  color: #ff0f87;
 }
 
 h1 {
@@ -85,7 +89,7 @@ p {
   font-weight: 400;
   font-style: normal;
   line-height: 1.3;
-  font-size: 1rem;
+  font-size: 1.12rem;
 }
 
 blockquote {
@@ -237,21 +241,3 @@ body.blue footer a {
 }
 
 
-/* Force pink text on specific pages */
-body.friedlander,
-body.hische,
-body.scher {
-  color: #ff0f87;
-}
-
-body.friedlander a,
-body.hische a,
-body.scher a {
-  color: #ff0f87;
-}
-
-body.friedlander a:hover,
-body.hische a:hover,
-body.scher a:hover {
-  color: #ff0f87;
-}
