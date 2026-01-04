@@ -105,16 +105,29 @@ p {
 }
 
 blockquote {
-  padding: 1rem 0;
-  font-size: 1.312rem;
-  font-style: italic;
-  hanging-punctuation: first;
-  text-indent: -0.5rem;
+  margin: 0;              /* stops default browser margins */
+  padding: 0;             /* remove extra width-feel padding */
 }
+
 blockquote p {
   font-size: 1.6rem;
   line-height: 1.4;
+  margin: 0;              /* stops the quote pushing wider */
+  max-width: 65ch;  
+   margin-left: auto;
+  margin-right: auto;
 }
+
+blockquote strong {
+  display: block;
+  margin-top: 0.6rem;
+  font-style: normal;
+  margin-bottom: 3rem;
+}      /* THIS is what constrains it */
+
+
+
+
 /* =========================
    Navigation
    ========================= */
@@ -176,12 +189,12 @@ nav a:hover {
   justify-content: center;
 }
 
-.gridimage image {
+.gridimage img {
   width: 300px;
   height: auto;
 }
 
-.wideimage image {
+.wideimage img {
   width: 100%;
   height: auto;
   display: block;
@@ -194,7 +207,7 @@ nav a:hover {
   height: 300px;
 }
 
-.abcyo image {
+.abcyo img {
   width: 50%;
   height: auto;
 }
